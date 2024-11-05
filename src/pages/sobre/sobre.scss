@@ -1,0 +1,44 @@
+$primary-color: #007acc;
+$background-gradient: linear-gradient(to bottom, #007acc, #000);
+
+.sobre-nos {
+    background: $background-gradient;
+    color: white;
+    padding: 2rem;
+
+    .cards-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 2rem;
+            margin: 1rem;
+            width: 300px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            h2 {
+                color: $primary-color;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .footer {
+        text-align: center;
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.1);
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+}

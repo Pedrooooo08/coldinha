@@ -1,0 +1,45 @@
+
+.feedbacks-section {
+    background-color: #f4f4f9;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .feedbacks-title {
+    color: #3b6ac5;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .feedbacks-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .feedback-card {
+    background-color: #3b6ac5;
+    color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .feedback-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    margin-bottom: 10px;
+  }
+  
+  .feedback-card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .feedback-card p {
+    font-size: 14px;
+  }
