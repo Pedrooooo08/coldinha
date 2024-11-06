@@ -4,7 +4,8 @@ import Home from './pages/inicio/inicio';
 import Sobre from './pages/sobre/sobre';
 import Contato from './pages/contato/contato';
 import Servicos from './pages/servicos/servicos';
-import Feedback from './pages/feed/fedd';
+import Cabegalho from './pages/cabecalho/cabegalho'
+
 
 
 
@@ -12,12 +13,13 @@ import Feedback from './pages/feed/fedd';
 const App = () => {
   return (
     <Router>
+      <Cabegalho/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="/servicos" element={<Servicos />} />
-        <Route path="/fedd" element={<Feedback />} />
+        <Route path="/cabegalho" element={<Cabegalho />} />
       </Routes>
     </Router>
   );
