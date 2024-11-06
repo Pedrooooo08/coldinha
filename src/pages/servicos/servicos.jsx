@@ -1,10 +1,15 @@
 import React from "react";
-import '../servicos/servicos.scss'
-
+import './servicos.scss';
+import d2 from '../image/foto1.png';
+import d3 from '../image/foto2.png';
+import d4 from'../image/foto3.png';
+import d5 from'../image/foto4.png';
+import Cabegalho from '../cabecalho/cabegalho'
 
 
 function ServiceCard({ title, price, description, image }) {
   return (
+
     <div className="service-card">
       <img src={image} alt={title} />
       <h2>{title}</h2>
@@ -12,6 +17,7 @@ function ServiceCard({ title, price, description, image }) {
       <p>{description}</p>
       <button>Assinar</button>
     </div>
+
   );
 }
 
@@ -19,42 +25,47 @@ function ServiceSection() {
   const services = [
     {
       title: "Pacote ByteShield",
-      price: "R$130/month",
+      price: "R$130/mês",
       description:
-        "Pacote de serviços que se concentra na proteção de dados e na segurança da informação, essencial para mitigar riscos e garantir conformidade com regulamentações.",
-      image: "path/to/image1.jpg",
+        "Pacote de serviços focado na proteção de dados e segurança da informação.",
+      image: d2, 
     },
     {
       title: "BasicSite (Plano Básico)",
-      price: "R$39/month",
+      price: "R$39/mês",
       description:
-        "O Plano BasicSite oferece uma solução acessível e prática para empresas e empreendedores estabelecerem uma presença online sólida e profissional.",
-      image: "path/to/image2.jpg",
+        "Plano acessível para criar uma presença online sólida.",
+      image: d3, 
     },
     {
       title: "Suporte TechSync",
-      price: "R$90/month",
+      price: "R$90/mês",
       description:
-        "Suporte técnico que se sincroniza perfeitamente com as necessidades e demandas tecnológicas dos clientes, oferecendo soluções personalizadas e rápidas.",
-      image: "path/to/image3.jpg",
+        "Suporte técnico personalizado e rápido.",
+      image: d4, 
     },
     {
       title: "IT Essentials",
-      price: "R$50/month",
+      price: "R$50/mês",
       description:
-        "Plano que aborda as necessidades básicas e essenciais de TI de uma empresa, incluindo suporte técnico básico e monitoramento.",
-      image: "path/to/image4.jpg",
+        "Plano com suporte técnico básico e monitoramento.",
+      image: d5, 
     },
   ];
 
   return (
-    <section id="servicos" className="services-section">
-      {services.map((service, index) => (
-        <ServiceCard key={index} {...service} />
-      ))}
-    </section>
+    <div>
+      <section id="servicos" className="services-section">
+        {services.map((service, index) => (
+          <ServiceCard key={index} {...service} />
+        ))}
+      </section>
+
+      <footer className="footer">
+        <p>© 2024 Cold Inventory & Technology. Todos os direitos reservados.</p>
+      </footer>
+    </div>
   );
 }
 
 export default ServiceSection;
-

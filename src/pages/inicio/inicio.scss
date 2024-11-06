@@ -1,14 +1,7 @@
 .home-page {
     text-align: center;
   
-    .header {
-      background-color: #007acc;
-      color: white;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-  
+
       .logo {
         width: 80px;  
         height: 80px; 
@@ -46,7 +39,7 @@
       }
   }
   
-          }
+          
         
       
       .geral {
@@ -108,17 +101,10 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
     }
-    
-    }
-    .footer {
-      background-color: #007acc;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 20px;
+  
       
       @media (max-width: 600px) {
-          padding: 15px;
+           padding: 12px;
       }
   
       .social-links {

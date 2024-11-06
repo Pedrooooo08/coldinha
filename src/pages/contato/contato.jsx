@@ -5,16 +5,11 @@ import logo from '../image/COLD.png';
 import facebookIcon from '../image/face.png'; 
 import instagramIcon from '../image/Instagram_icon.png'; 
 import twitterIcon from '../image/x.png'; 
-ola
+
 const ContactPage = () => { 
   return (
     <div className="contact-page">
-      <header className="header">
-        <Link to="/" className="logo">
-          <img src={logo} alt="Logo" />
-        </Link>
-        <h1>Contato</h1>
-      </header>
+      
       <div className="content">
         <div className="social-section">
           <h2>Conecte-se Conosco</h2>
