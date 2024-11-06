@@ -5,7 +5,7 @@ import logo from '../image/COLD.png';
 import facebookIcon from '../image/face.png'; 
 import instagramIcon from '../image/Instagram_icon.png'; 
 import twitterIcon from '../image/x.png'; 
-
+ola
 const ContactPage = () => { 
   return (
     <div className="contact-page">
